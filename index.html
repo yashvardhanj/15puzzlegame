@@ -1,0 +1,43 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>15-puzzle game</title>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">15-puzzle game</a>
+            <select id="myDropdown" onchange="getSelectedValue()">
+                <option value="">Choose format</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+    </nav>
+    <div id="time">
+        <span class="digit" id="min"> 
+            00</span> 
+        <span class="txt">Min</span> 
+        <span class="digit" id="sec"> 
+            00</span> 
+        <span class="txt">Sec</span> 
+        <span class="digit" id="count"> 
+            00</span> 
+    </div> 
+    <div class="moves">
+        <h2 class="txt">moves:</h2>
+       <span class="digit" id="moves"></span>
+    </div>
+    <div class="grid-container" id="grid">
+        <!-- Grid items will be generated dynamically by JavaScript -->
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
